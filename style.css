@@ -1,0 +1,51 @@
+/* CSS */
+:root {
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
+    /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+    :root {
+        font-family: InterVariable, sans-serif;
+    }
+}
+
+:root {
+    --background-main: #edf4f7;
+    --background-side: #f4f8fa;
+    --primary-blue: #32444d;
+    --secondary-blue: #b3c3cc;
+    --primary-orange: #ff6719;
+    --secondary-orange: #ffaa80;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: Inter;
+    font-size: 16px;
+    line-height: 1.5;
+    background: var(--background-main);
+    color: var(--primary-blue);
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+h2 {
+    color: var(--secondary-blue);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 24px 0 0 10px;
+}
+
+p {
+    font-size: 24px;
+}
