@@ -4,7 +4,7 @@
 // headerTag.style.backgroundColor = "var(--primary-orange)";
 // headerTag.style.fontSize = "64px";
 
-const headerTags = document.querySelectorAll("h1");
+// const headerTags = document.querySelectorAll("h1");
 
 // headerTags.forEach((h1) => {
 
@@ -13,6 +13,17 @@ const headerTags = document.querySelectorAll("h1");
 
 // })
 
-headerTags.forEach((h1, index) => {
-    h1.innerHTML = "This is tag number " + index;
+// headerTags.forEach((h1, index) => {
+//     h1.innerHTML = "This is tag number " + index;
+// })
+
+
+
+const rectTags = document.querySelectorAll("rect");
+
+
+rectTags.forEach((tag, i) => {
+
+    const width = 100 + 300 * i;
+    tag.setAttribute("width", width + "px");
 })
