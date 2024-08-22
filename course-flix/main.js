@@ -6,8 +6,13 @@
 
 const headerTags = document.querySelectorAll("h1");
 
-headerTags.forEach((h1) => {
+// headerTags.forEach((h1) => {
 
-    h1.style.backgroundColor = "#ffff00";
-    h1.style.fontSize = "42px";
+//     const hue = 360 * Math.random();
+//     h1.style.backgroundColor = "hsl(" + hue + ", 100%, 50%)";
+
+// })
+
+headerTags.forEach((h1, index) => {
+    h1.innerHTML = "This is tag number " + index;
 })
