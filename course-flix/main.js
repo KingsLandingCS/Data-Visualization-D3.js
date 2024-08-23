@@ -20,10 +20,14 @@
 
 
 const rectTags = document.querySelectorAll("rect");
+const data = [550, 420, 731];
+
+
 
 
 rectTags.forEach((tag, i) => {
 
-    const width = 100 + 300 * i;
+    // const width = 100 + 300 * i;
+    const width = data[i];
     tag.setAttribute("width", width + "px");
 })
