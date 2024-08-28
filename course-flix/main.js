@@ -19,15 +19,31 @@
 
 
 
-const rectTags = document.querySelectorAll("rect");
-const data = [550, 420, 731];
+// const rectTags = document.querySelectorAll("rect");
 
 
 
+// rectTags.forEach((tag, i) => {
 
-rectTags.forEach((tag, i) => {
+//     // const width = 100 + 300 * i;
+//     const width = data[i];
+//     tag.setAttribute("width", width + "px");
+// })
 
-    // const width = 100 + 300 * i;
-    const width = data[i];
-    tag.setAttribute("width", width + "px");
+
+
+const data = [550, 420, 731, 420];
+
+const todaySvg = document.querySelector("svg");
+
+data.forEach((d, i) => {
+
+    const rectTag = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    rectTag.setAttribute("x", "20");
+    rectTag.setAttribute("y", "20");
+    rectTag.setAttribute("width", "200");
+    rectTag.setAttribute("height", "40");
+
+
+    todaySvg.append(rectTag);
 })
