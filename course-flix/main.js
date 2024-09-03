@@ -32,17 +32,17 @@
 
 
 
-const data = [550, 420, 731, 420];
+const data = [2, 3, 5, 6, 4, 2, 5, 20, 24, 32, 40, 59, 68, 89, 100, 112, 109, 101, 78, 56, 32, 31, 12, 1];
 
 const todaySvg = document.querySelector("svg");
 
 data.forEach((d, i) => {
 
     const rectTag = document.createElementNS("http://www.w3.org/2000/svg", "rect");
-    rectTag.setAttribute("x", "20");
-    rectTag.setAttribute("y", "20");
-    rectTag.setAttribute("width", "200");
-    rectTag.setAttribute("height", "40");
+    rectTag.setAttribute("x", i * 36);
+    rectTag.setAttribute("y", 112 - d);
+    rectTag.setAttribute("width", 24);
+    rectTag.setAttribute("height", d);
 
 
     todaySvg.append(rectTag);
