@@ -8,4 +8,7 @@ const rectTags = d3.selectAll("rect");
 
 rectTags
     .data(todayData)
-    .attr("width", 600);
+    .attr("width", (d, i) => { return d })
+    .attr("y", (d, i) => { return 50 * i })
+    .attr("x", 0)
+    .arrt("height", 40)
