@@ -45,6 +45,7 @@ nav {
 
 main {
     padding: 48px;
+    height: 100vh;
 }
 
 h1 {
@@ -63,7 +64,7 @@ p {
     font-size: 24px;
 }
 
-rect {
+svg rect {
     fill: var(--primary-orange);
 }
 
