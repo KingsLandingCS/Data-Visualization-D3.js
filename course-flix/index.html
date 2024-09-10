@@ -9,8 +9,7 @@
     <!-- HTML in your document's head -->
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-    <!-- <script src="main.js" defer></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="today.js" defer></script>
 </head>
 
 <body>
@@ -32,9 +31,13 @@
 
     <main>
         <h1>Today</h1>
-        <svg width="900" height="200">
 
+        <svg width="900" height="200">
+            <rect x="0" y="0" width="300" height="40"></rect>
+            <rect x="0" y="50" width="350" height="40"></rect>
+            <rect x="0" y="100" width="250" height="40"></rect>
         </svg>
+
 
         <h1>Last 28 days</h1>
         <svg width="900" height="600">
@@ -44,11 +47,8 @@
         </svg>
     </main>
 
-    <script type="module">
-
-
-
-    </script>
+    <!-- <script src="main.js" defer></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
 </body>
 
 </html>
