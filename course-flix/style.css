@@ -34,18 +34,16 @@ body {
     color: var(--primary-blue);
     display: grid;
     grid-template-columns: 320px 1fr;
-
 }
 
 nav {
     background: var(--background-side);
-    min-height: 100vh;
+
     padding: 48px;
 }
 
 main {
     padding: 48px;
-    height: 100vh;
 }
 
 h1 {
