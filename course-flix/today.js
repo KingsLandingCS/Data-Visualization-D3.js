@@ -11,9 +11,7 @@ todaySvg
     .data(todayData)
     .enter()
     .append("rect")
-    .attr("width", (d, i) => { return d })
-    .attr("y", (d, i) => { return 20 * i })
-    .attr("x", 0)
-    .attr("height", 16);
-
-console.log(todaySvg.selectAll("rect").data(todayData).enter());
+    .attr("x", (d, i) => { return i * 36 })
+    .attr("y", (d, i) => { return 112 - d })
+    .attr("width", 24)
+    .attr("height", (d, i) => { return d });

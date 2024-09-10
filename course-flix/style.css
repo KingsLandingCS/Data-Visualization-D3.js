@@ -64,6 +64,10 @@ p {
     font-size: 24px;
 }
 
+.first-svg-container svg {
+    height: 100vh;
+}
+
 svg rect {
     fill: var(--primary-orange);
 }
