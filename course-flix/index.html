@@ -10,7 +10,10 @@
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
     <script src="today.js" defer></script>
-    <script src="main.js defer"></script>
+    <script src="main.js" defer></script>
+    <script type="module" src="month.js" defer></script>
+    <script src="data.js" defer></script>
+
 </head>
 
 <body>
@@ -31,24 +34,18 @@
     </nav>
 
     <main>
+        <h1>Today</h1>
+        <svg width="900" height="200" class="today">
+        </svg>
 
-        <div class="first-svg-container">
-            <h1>Today</h1>
-            <svg width="900" height="200">
-                
-            </svg>
-        </div>
-
-
-
-        <div >
+        <div>
             <h1>Last 28 days</h1>
-            <svg >
-                <circle cx="60" cy="80" r="50"></circle>
-                <circle cx="180" cy="80" r="40"></circle>
-                <circle cx="360" cy="80" r="60"></circle>
+            <svg width="900" height="600" class="month">
+
             </svg>
         </div>
+
+
     </main>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css"

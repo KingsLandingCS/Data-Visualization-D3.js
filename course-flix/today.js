@@ -3,12 +3,11 @@ const todayData = [20, 30, 50, 6, 4, 2,
     112, 109, 101, 78, 56, 32, 31, 12, 1];
 
 
-const todaySvg = d3.select("svg");
+const todaySvg = d3.select("svg.today");
 
 const barScale = d3.scaleLinear()
     .domain([0, 2000])
     .range([1, 112]);
-
 
 todaySvg
     .selectAll("rect")
@@ -25,6 +24,6 @@ todaySvg
     .data("todayData")
     .enter()
     .append("text")
-    .attr("x", (d, i) => { return i * 36 + 12})
+    .attr("x", (d, i) => { return i * 36 + 12 })
     .attr("y", 130)
     .text((d, i) => { return i })
